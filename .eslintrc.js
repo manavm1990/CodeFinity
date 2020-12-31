@@ -9,5 +9,15 @@ module.exports = {
     "prettier",
     "prettier/react",
   ],
-  rules: { "react/react-in-jsx-scope": 0 },
+  rules: {
+    "import/no-unresolved": 1,
+    "no-unused-vars": [
+      "warn",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
+    ],
+    "react/react-in-jsx-scope": 0,
+  },
 }
