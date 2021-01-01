@@ -4,7 +4,7 @@ import bgWebM from "assets/bg.webm"
 import React from "react"
 
 const Video = () => (
-  <video autoPlay muted>
+  <video autoPlay muted className="h-screen w-screen object-cover fixed -z-1">
     <source src={bgMP4} type="video/mp4" />
     <source src={bgOGV} type="video/ogg" />
     <source src={bgWebM} type="video/webm" />
