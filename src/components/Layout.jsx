@@ -12,7 +12,7 @@ import Header from "./Header"
 const Layout = ({ children }) => (
   <>
     <Header />
-    <div className="m-0-auto max-w-lg pt-0 px-4 pb-6">
+    <div className="my-0 mx-auto max-w-lg pt-0 px-4 pb-6">
       <main>{children}</main>
       <footer className="mt-8">
         © {new Date().getFullYear()}, Built with

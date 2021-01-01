@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="bg-primary mb-6">
-      <div className="m-0-auto max-w-screen-lg py-6 px-4">
+      <div className="my-0 mx-auto max-w-screen-lg py-6 px-4">
         <h1 className="m-0">
           <Link to="/" className="text-white no-underline">
             {data.site.siteMetadata.title}
