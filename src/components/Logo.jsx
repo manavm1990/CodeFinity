@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Logo = ({ styles }) => (
-  <figure>
-    <img src={logo} alt="CodeFinity Logo" className={styles} />
+  <figure className={styles}>
+    <img src={logo} alt="CodeFinity Logo" />
   </figure>
 )
 
