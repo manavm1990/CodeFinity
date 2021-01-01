@@ -5,7 +5,10 @@ const IndexPage = () => (
   <>
     <SEO title="Home" />
     <Video />
-    <Logo styles="w-40" />
+
+    <div className="h-screen flex justify-center items-center">
+      <Logo styles="max-w-xs w-50vw" />
+    </div>
   </>
 )
 
