@@ -11,6 +11,7 @@ module.exports = {
   ],
   rules: {
     "import/no-unresolved": 1,
+    "import/prefer-default-export": 1,
     "no-unused-vars": [
       "warn",
       {
