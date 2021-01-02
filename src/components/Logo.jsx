@@ -1,11 +1,17 @@
 import logo from "assets/images/logo.svg"
+import { motion } from "framer-motion"
 import PropTypes from "prop-types"
 import React from "react"
 
 const Logo = ({ styles }) => (
-  <figure className={styles}>
+  <motion.figure
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.8 }}
+    className={styles}
+  >
     <img src={logo} alt="CodeFinity Logo" />
-  </figure>
+  </motion.figure>
 )
 
 Logo.propTypes = {
