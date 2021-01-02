@@ -15,7 +15,7 @@ const IndexPage = () => (
         transition={{ delay: 1.1 }}
       >
         <Button
-          text=" 👨🏾‍🎓 Students"
+          text=" 👨🏾‍🎓 Curricula"
           styles="bg-btn hover:bg-gray-50 border-2 border-white rounded hover:rounded-3xl hover:shadow font-mono mt-8 text-yellow-500 hover:text-green-400 tracking-widest transform hover:scale-110 transition-all uppercase p-3"
         />
       </motion.div>
