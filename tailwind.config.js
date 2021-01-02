@@ -15,10 +15,18 @@ module.exports = {
         "-1": "-1",
       },
     },
-    backgroundColor: () => ({ primary: "rebeccapurple" }),
+    backgroundColor: theme => ({
+      btn: "rgba(221,221,221,.25)",
+      ...theme("colors"),
+    }),
+    boxShadow: { DEFAULT: "0 0 8px hsla(64, 100%, 50%,.5)" },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderRadius: ["hover"],
+      boxShadow: ["hover"],
+      transform: ["hover"],
+    },
   },
   plugins: [],
 }
