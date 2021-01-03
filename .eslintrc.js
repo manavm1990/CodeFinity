@@ -19,6 +19,5 @@ module.exports = {
         varsIgnorePattern: "^_",
       },
     ],
-    "react/react-in-jsx-scope": 0,
   },
 }
