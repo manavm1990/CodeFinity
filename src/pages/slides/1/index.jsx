@@ -13,6 +13,7 @@ import {
   Text,
   UnorderedList,
 } from "spectacle"
+import { Slide as Template } from "templates"
 import carbon from "./img/carbon.svg"
 import carbon2 from "./img/carbon2.svg"
 import electron from "./img/electron.png"
@@ -22,10 +23,9 @@ import node from "./img/nodejs.svg"
 import react from "./img/react.png"
 import student from "./img/student.png"
 import student2 from "./img/student2.png"
-import template from "./template"
 
 export default () => (
-  <Deck template={template} transitionEffect="fade">
+  <Deck template={Template} transitionEffect="fade">
     <Slide
       backgroundImage="url(https://images.unsplash.com/photo-1565299543923-37dd37887442?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1014&q=80)"
       backgroundOpacity={0.4}
