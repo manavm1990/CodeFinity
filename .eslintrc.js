@@ -6,6 +6,7 @@ module.exports = {
     "react-app",
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
     "prettier",
     "prettier/react",
   ],
