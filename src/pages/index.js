@@ -1,22 +1,26 @@
+import { Button, Logo, SEO, Video } from "components"
+import { motion } from "framer-motion"
+import { getVampire } from "lib"
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Video />
+    <div className="h-screen flex flex-col justify-center items-center">
+      <Logo styles="max-w-xs w-50vw" />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.1 }}
+      >
+        <Button
+          text={`👨🏾‍🎓 Curricula${getVampire()}`}
+          styles="bg-btn hover:bg-gray-50 border-2 border-white rounded hover:rounded-3xl hover:shadow font-mono mt-8 text-yellow-500 hover:text-green-400 tracking-widest transform hover:scale-110 transition-all uppercase p-3"
+        />
+      </motion.div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  </>
 )
 
 export default IndexPage
